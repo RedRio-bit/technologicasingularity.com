@@ -3,68 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dominio liberato — RedRioLab</title>
-  <meta name="description" content="Site starter minimale per GitHub Pages">
-  <link rel="preload" href="assets/style.css" as="style">
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Singolarità Tecnologica — RedRioLab</title>
+  <meta name="description" content="Ricerca, arte e tecnologia. Una landing minimale e veloce servita da GitHub Pages.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Singolarità Tecnologica — RedRioLab">
+  <meta property="og:description" content="Ricerca, arte e tecnologia. Presto online.">
+  <meta property="og:image" content="assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/landing.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="hdr">
     <div class="wrap">
-      <a class="brand" href="/">REDRIO<span>LAB</span></a>
+      <a class="brand" href="/">SINGOLARITÀ<span>TECNOLOGICA</span></a>
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#links">Link</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#progetti">Progetti</a>
+        <a class="cta" href="mailto:hello@singolaritàtecnologica.com">Contatti</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="Introduzione">
       <div class="wrap">
-        <h1>Dominio liberato</h1>
-        <p class="tag">Ora questo dominio punta a GitHub Pages.</p>
-        <p class="mini">File: <code>index.html</code> · Modifica questo testo e pubblica.</p>
+        <h1>Dominio liberato. Missione avviata.</h1>
+        <p class="lead">Un laboratorio indipendente tra <strong>AI</strong>, cultura e design. Sito in costruzione, ma la direzione è chiara.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#manifesto">Leggi il Manifesto</a>
+          <a class="btn ghost" href="#progetti">Progetti</a>
+        </div>
+        <p class="mini">Hosting: GitHub Pages · HTTPS attivo</p>
       </div>
+      <div class="bg" aria-hidden="true"></div>
     </section>
 
-    <section id="about" class="section">
+    <section id="manifesto" class="section">
       <div class="wrap narrow">
-        <h2>Minimal, veloce, pulito</h2>
-        <p>
-          Questo è un template statico pronto all’uso. Nessun framework, solo HTML/CSS.
-          Perfetto per landing, portfolio, micro‑siti. Mobile‑first, tipografia leggibile, dark elegante.
-        </p>
-        <ul class="checks">
-          <li>Gratuito su GitHub Pages</li>
-          <li>HTTPS automatico</li>
-          <li>Dominio personalizzato</li>
+        <h2>Manifesto, in tre righe</h2>
+        <ul class="grid">
+          <li><strong>Esperimenti rapidi.</strong> Piccoli lanci continui battono i “grandi domani”.</li>
+          <li><strong>Estetica con criterio.</strong> Minimalismo, verità analogica, nessun trucco.</li>
+          <li><strong>Umano al centro.</strong> L’AI come amplificatore creativo, non come travestimento.</li>
         </ul>
       </div>
     </section>
 
-    <section id="links" class="section alt">
+    <section id="progetti" class="section alt">
       <div class="wrap narrow">
         <h2>Prossimi passi</h2>
-        <ol>
-          <li>Personalizza <code>index.html</code> e <code>assets/style.css</code>.</li>
-          <li>Nel repo GitHub: <em>Settings → Pages → Custom domain</em> e inserisci il tuo dominio.</li>
-          <li>Su GoDaddy: imposta i 4 record A verso GitHub e il CNAME per <code>www</code>.</li>
+        <ol class="steps">
+          <li>Setup delle pagine: <code>/about</code>, <code>/lab</code>, <code>/contatti</code>.</li>
+          <li>Collegamento dei domini: <code>technologicalsingularity.it</code> e <code>singolaritàtecnologica.com</code>.</li>
+          <li>Pubblicazione del primo esperimento live.</li>
         </ol>
-        <p class="mini">Hai due domini? Puoi puntarli entrambi qui usando DNS separati.</p>
+        <p class="mini">Vuoi collaborare? Scrivi a <a href="mailto:hello@singolaritàtecnologica.com">hello@singolaritàtecnologica.com</a>.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="ftr">
     <div class="wrap">
-      <p>© <span id="y"></span> RedRioLab — GitHub Pages starter</p>
+      <p>© <span id="y"></span> RedRioLab • Singolarità Tecnologica</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
